@@ -1,6 +1,16 @@
 "use strict";
-var age = 21;
-var studentName = 'kyu';
+// readonly -> final
+// interface -> object(???)
+// ? -> selectional
+// define method in interface
 function getStudentDetails(studentName) {
-    return null;
+    return {
+        studentName: 'kyu'
+    };
 }
+function saveStudentDeatils(student) {
+}
+saveStudentDeatils({
+    age: 21,
+    studentName: 'fwefwew'
+});
