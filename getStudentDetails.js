@@ -20,6 +20,6 @@ function saveStudentDeatils(student) {
 }
 saveStudentDeatils({
     age: 21,
-    gender: GenderType.Female,
+    gender: 'female',
     studentName: 'fwefwew'
 });

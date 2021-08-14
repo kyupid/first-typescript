@@ -19,7 +19,7 @@ enum GenderType { //enum 문자열거형
 interface Student {
     readonly age?: number;
     studentName: string;
-    gender: GenderType;
+    gender: 'male' | 'female' | 'genderNeutral', // literal type
     //addComment(comment: string): string;
     addComment?: (comment: string) => string;
 }
@@ -37,6 +37,6 @@ function saveStudentDeatils(student: Student): void {
 
 saveStudentDeatils({
     age: 21,
-    gender: GenderType.Female,
+    gender: 'female',
     studentName: 'fwefwew'
 })
